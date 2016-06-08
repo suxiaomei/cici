@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>编辑收货地址</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+</head>
+<body style="background:#f8f8f8">
+
+	<div class="form-group-list">
+		<div class="form-group">
+			<label for="">收货人：</label>
+			<input type="text" placeholder="张小齐">
+			<i class="right-arrow"></i>
+		</div>
+		<div class="form-group">
+			<label for="">手机号码：</label>
+			<input type="text" placeholder="13588985263">
+			<i class="right-arrow"></i>
+		</div>
+		<div class="form-group">
+			<label for="">所在地区：</label>
+			<input type="hidden" placeholder="" >
+			<div id="city">
+				<select name="" id="" class="select prov"></select>
+				<select name="" id="" class="select city"  disabled="disabled"></select>
+				<select name="" id="" class="select dist" disabled="disabled"></select>
+			</div>			
+		</div>
+		<div class="form-group">
+			<label for="">详细地址：</label>
+			<input type="text" placeholder="常兴路83号国兴大厦16楼">
+			<i class="right-arrow"></i>
+		</div>
+		<div class="form-group">
+			<label for="">邮政编码：</label>
+			<input type="text" placeholder="518000">
+			<i class="right-arrow"></i>
+		</div>
+		<div class="form-group" style="padding-left:30px" id="setDdefault">
+			<span><i class="choose"></i>设为默认地址</span>
+		</div>
+		<div class="form-group" style="padding-left:0">
+			<a href="" class="deleteBtn" id="deleteBtn">删除收货地址</a>
+		</div>
+	</div>	
+
+	<div class="container">
+		<a class="btn btn-block btn-danger btn-lg" href="">保存</a>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-1.10.js"></script>
+	<script type="text/javascript" src="../js/jquery.cityselect.js"></script>
+	<script type="text/javascript" src="../js/xcConfirm.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#setDdefault").click(function () {
+				$(this).find("i").toggleClass("choosed");
+			});
+
+			$("#deleteBtn").click(function () {
+              var msg = "确认删除该地址么？";
+              window.wxc.xcConfirm(msg, window.wxc.xcConfirm.typeEnum.info);
+              return false;
+           });
+
+			$("#city").citySelect({
+				prov:"北京", 
+    			city:"东城区"
+			});
+
+		})
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>学员中心</title>        
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <meta name="Keywords" content="" />
+        <meta name="Description" content="" />
+        <link rel="stylesheet" href="../css/business.css">
+        <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    </head>
+    <body>
+    
+    <div class="container-fluid">
+
+        <!--boxer-top-->
+        <div class="boxer-top bg-red">
+              <div class="clearfix">
+                  <img src="../images/business/img_r.png"  class="pull-left circle portrait" alt="李贤珠">
+                  <div class="pull-left">
+                      <h1>李贤珠</h1>
+                      <h2>135****4568</h2>
+                  </div>
+              </div> 
+              <div class="qrcode" id="qrcode" onclick="document.getElementById('mcover').style.display='block';">
+                  <img src="../images/business/ewm.png" class="ewm" width="20" height="20" alt="">
+                  <img src="../images/business/arrow.png" width="8" height="12" alt="">
+              </div> 
+                <div id="mcover" style="displey: none;" onclick="document.getElementById('mcover').style.display='';">
+                    <div class="mcover_body">
+                        <img src="../images/business/qrcode.png" alt=""/>
+                    </div>
+                 </div>  
+        </div>
+        <!--boxer-top-->
+
+
+        <!--boxer-center-->
+        <div class="boxer-center clearfix">
+            <div class="boxder-item">
+                <div class="boxder-item-inner clearfix">
+                    <img src="../images/business/img_l.png" width="50" height="50" alt="" class="pull-left">
+                    <h3 class="text-center">修课信息</h3>
+                </div>                
+            </div>
+            <div class="boxder-item">
+                <div class="boxder-item-inner clearfix">
+                    <img src="../images/business/img_r.png" width="50" height="50" alt="" class="pull-left">
+                    <h3 class="text-center">参与活动</h3>
+                </div>               
+            </div>
+        </div>
+        <!--boxer-center-->
+    
+        <!--boxer-nav-->
+        <div class="boxer-nav clearfix">
+            <div class="boxer-nav-item">
+                <img src="../images/business/jf.png" width="50" height="50" alt="">
+                <p>缴费记录</p>
+            </div>
+            <div class="boxer-nav-item">
+                <img src="../images/business/jb.png"  width="50" height="50" alt="">
+                <p>电话解绑</p>
+            </div>
+            <div class="boxer-nav-item">
+                <img src="../images/business/kc.png"  width="50" height="50" alt="">
+                <p>课程表</p>
+            </div>
+        </div>
+        <!--boxer-nav-->
+
+        <!--boxer-slider-->
+        <div class="boxer-slider">
+            <ul class="bxslider">
+                <li><img src="../images/business/banner.png" class="responsive" alt=""></li>
+                <li><img src="../images/business/banner.png"  class="responsive" alt=""></li>
+                <li><img src="../images/business/banner.png"  class="responsive" alt=""></li>
+            </ul>
+        </div>
+        <!--boxer-slider-->
+
+
+        <div class="boxer-bottom">
+            <div class="boxer-bottom-group">
+                <a class="boxer-bottom-item" href="">
+                    <img src="../images/business/clearing.png"  width="24" height="24" alt="">
+                    <p>清除缓存</p>
+                </a>
+                <a class="boxer-bottom-item" href="">
+                    <img src="../images/business/recommend.png"  width="24" height="24" alt="">
+                    <p>我的推荐</p>
+                </a>
+                <a class="boxer-bottom-item" href="addAddress.html">
+                    <img src="../images/business/address.png"  width="24" height="24" alt="">
+                    <p>常用地址</p>
+                </a>
+                <a class="boxer-bottom-item expect" href="">
+                    <img src="../images/business/expect.png"  width="24" height="24" alt="">
+                    <p>敬请期待</p>
+                </a>
+            </div>
+
+           <div class="boxer-bottom-group">
+                <a class="boxer-bottom-item expect" href="">
+                    <img src="../images/business/expect.png"  width="24" height="24" alt="">
+                    <p>敬请期待</p>
+                </a>
+                <a class="boxer-bottom-item expect" href="">
+                    <img src="../images/business/expect.png"  width="24" height="24" alt="">
+                    <p>敬请期待</p>
+                </a>
+                <a class="boxer-bottom-item expect" href="">
+                    <img src="../images/business/expect.png"  width="24" height="24" alt="">
+                    <p>敬请期待</p>
+                </a>
+                <a class="boxer-bottom-item expect" href="">
+                    <img src="../images/business/expect.png"  width="24" height="24" alt="">
+                    <p>敬请期待</p>
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+        
+
+
+        
+    <script src="../js/jquery-1.10.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $(".bxslider").bxSlider({
+                auto:true,
+                touchEnabled:true
+            });
+        })
+
+
+    </script>
+    </body>
+</html>
+
